@@ -6,11 +6,8 @@ from django.utils import timezone
 class Tags(models.Model):
     type = models.CharField(max_length=100, help_text='Enter Post Tags Ex. Python, React.js')
 
-
-class Comments(models.Model):
-    comment = models.TextField()
-    add_date = models.DateTimeField(auto_now_add=timezone.now())
-    add_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.type
 
 
 class Posts(models.Model):
@@ -19,4 +16,16 @@ class Posts(models.Model):
     created_data = models.DateTimeField(auto_now_add=timezone.now())
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     tags = models.ForeignKey(Tags, on_delete=models.PROTECT)
-    comments = models.ForeignKey(Comments, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.post_title[:20]
+
+
+class Comments(models.Model):
+    comment = models.TextField()
+    add_date = models.DateTimeField(auto_now_add=timezone.now())
+    add_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    post_id = models.ForeignKey(Posts, blank=True, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.comment[:20]} - {User.objects.get(pk=self.add_by.pk)}'
