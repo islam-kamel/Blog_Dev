@@ -11,12 +11,12 @@
 #### Get all items
 
 ```http
-  GET /api/items
+  GET /api/posts
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `Null`    | `Json`   | View Lists of Posts.       |
 
 #### Get item
 
