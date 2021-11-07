@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework import generics, permissions
 from .serializers import PostsSerializers
 from .models import Posts
@@ -9,3 +10,7 @@ class PostsViewSet(generics.ListCreateAPIView):
     queryset = Posts.objects.all()
     serializer_class = PostsSerializers
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+def index(request):
+    return render(request, 'index.html')
