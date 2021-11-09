@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.urls import path, include, reverse, resolvers
+
 from rest_framework import generics, permissions
 from .serializers import PostsSerializers
 from .models import Posts

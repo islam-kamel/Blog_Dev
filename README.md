@@ -5,7 +5,10 @@
 # **Cookie**
 > Blog Content on DEV Community.
 
-
+![GitHub language count](https://img.shields.io/github/languages/count/islam-kamel/cookie_blog)
+![](https://img.shields.io/badge/Coverage-98%25-success)
+![GitHub repo size](https://img.shields.io/github/repo-size/islam-kamel/cookie_blog)
+![GitHub](https://img.shields.io/github/license/islam-kamel/cookie_blog)
 ## API Reference
 
 #### Get all items
