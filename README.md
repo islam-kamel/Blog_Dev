@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/tmz1bwT/banner-blog-dev.png)
+![Logo](https://i.ibb.co/bmJ0sNg/banner-blog-dev.png)
 
 
 # **Cookie**
