@@ -1,9 +1,9 @@
 
-![Logo](https://i.ibb.co/8dDfg9V/banner-blog-dev.png)
+![Logo](https://i.ibb.co/tmz1bwT/banner-blog-dev.png)
 
 
-# **Blog Dev**
-> This is developer community blog for developer only.
+# **Cookie**
+> Blog Content on DEV Community.
 
 
 ## API Reference
