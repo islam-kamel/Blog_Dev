@@ -5,10 +5,12 @@
 # **Cookie**
 > Blog Content on DEV Community.
 
-![GitHub language count](https://img.shields.io/github/languages/count/islam-kamel/cookie_blog)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/islam-kamel/cookie_blog/django)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/islam-kamel/cookie_blog/djangorestframework)
 ![](https://img.shields.io/badge/Coverage-98%25-success)
 ![GitHub repo size](https://img.shields.io/github/repo-size/islam-kamel/cookie_blog)
 ![GitHub](https://img.shields.io/github/license/islam-kamel/cookie_blog)
+
 ## API Reference
 
 #### Get all items
@@ -31,12 +33,10 @@
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
 
 
 ## Tech Stack
-
-**Server:** Python, Django
-
+``
+**Server:** Python, Django, Rest Framework
+``
