@@ -15,6 +15,7 @@
 
 #### Get all items
 
+
 ```http
   GET /api/posts
 ```
